@@ -1,0 +1,25 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<br>
+<h2>{{ title }}.</h2>
+
+<address>
+    <a href="https://vk.com/rossiyanochka60" target="_blank">
+        <img src="{% static 'app/content/vk.png' %}" alt="Мы во «ВКонтакте»" width="40"> Мы во ВКонтакте
+    </a><br />
+    <a href="https://t.me/rossiyanochkaofficial" target="_blank">
+        <img src="{% static 'app/content/tg.png' %}" alt="Мы в «Телеграмм»" width="40"> Мы в Телеграмм
+    </a><br />
+    <a href="https://vk.link/rossiyanochka60" target="_blank">
+        <img src="{% static 'app/content/contact.jpg' %}" alt="Страница ВК" width="40"> Краткая информация о нас
+    </a><br />
+    <a href="https://yandex.ru/maps/25/pskov/search/Россияночка/?from=api-maps&ll=28.311209%2C57.823295&origin=jsapi_2_1_79&pt=28.333355%2C57.817235~28.359939%2C57.809614~28.349222%2C57.83907~28.291314%2C57.821531~28.289716%2C57.823472&sll=28.329821%2C57.820762&sspn=0.105532%2C0.035920&z=13" target="_blank">
+        <img src="{% static 'app/content/k.png' %}" alt="Страница ВК" width="40"> Мы на карте Пскова
+    </a>
+</address>
+
+
+{% endblock %}

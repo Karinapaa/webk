@@ -1,0 +1,47 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+<br>
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    <strong> Наши адреса: </strong><br /> <br />
+    ✔Псков, Октябрьский пр., 37/2
+    ☎8(911)398-28-17<br />
+
+    ✔Псков, Советская ул., 9
+    ☎8(911)392-73-10<br />
+
+    ✔Псков, Юбилейная ул., 68 ПИК60 отдел "Петербургский стиль" 2 этаж
+    ☎ 8(953)237-16-77<br />
+
+    ✔Псков, Труда ул., 50
+    ☎ 8(953)237-16-77<br />
+
+    ✔Псков, Кузбасской див. 19 ТРК Акваполис отдел "YUNA style" 1 этаж
+    ☎ 8(953)237-16-77<br />
+
+    ✔Псков, Завеличенская ул., 28
+    ☎8(911)884-28-59<br /> <br />
+
+    <a href="https://yandex.ru/maps/25/pskov/search/Россияночка/?from=api-maps&ll=28.311209%2C57.823295&origin=jsapi_2_1_79&pt=28.333355%2C57.817235~28.359939%2C57.809614~28.349222%2C57.83907~28.291314%2C57.821531~28.289716%2C57.823472&sll=28.329821%2C57.820762&sspn=0.105532%2C0.035920&z=13.44" target="_blank">
+        <img src="{% static 'app/content/karta.jpg' %}" alt="karta" width="1120">
+    </a>
+</address>
+
+<address>
+    <strong>Техническая поддержка:</strong>
+    <a href="8(911)367-99-41"></a> 8(911)367-99-41 <br />
+    <a href="https://vk.com/rossiyanochka60" target="_blank">
+        <img src="{% static 'app/content/vk.png' %}" alt="Мы во «ВКонтакте»" width="30"> Мы во ВКонтакте
+    </a><br />
+    <a href="https://t.me/rossiyanochkaofficial" target="_blank">
+        <img src="{% static 'app/content/tg.png' %}" alt="Мы во «ВКонтакте»" width="30"> Мы в Телеграмм
+    </a>
+</address>
+
+
+{% endblock %}
